@@ -30,15 +30,23 @@ A professional-grade Discord music bot with a sleek **Spotify-inspired UI**, liv
    npm install
    ```
 3. **Configure Environment**:
-   Create a `.env` file in the root directory:
-   ```env
-   DISCORD_TOKEN=your_bot_token_here
-   ```
-4. **Setup Lavalink**:
-   Ensure `Lavalink.jar` and `application.yml` are present. Run it once to verify:
+   Copy `.env.example` to `.env` and fill in your details:
    ```bash
-   java -jar Lavalink.jar
+   cp .env.example .env
    ```
+   *Required:* `DISCORD_TOKEN`.
+
+4. **Setup Lavalink**:
+   - Ensure `Lavalink.jar` is in the root directory.
+   - Copy `application.yml.example` to `application.yml`:
+     ```bash
+     cp application.yml.example application.yml
+     ```
+   - The `plugins/` folder is included by default and contains the necessary **YouTube plugin**.
+   - Start Lavalink:
+     ```bash
+     java -jar Lavalink.jar
+     ```
 
 ### Running Locally
 ```bash
