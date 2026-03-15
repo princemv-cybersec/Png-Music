@@ -1,0 +1,9 @@
+node_modules/
+.env
+*.log
+Lavalink.jar
+application.yml
+plugins/
+logs/
+.DS_Store
+package-lock.json
